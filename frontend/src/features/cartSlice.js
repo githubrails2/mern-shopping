@@ -12,22 +12,22 @@ const initialState = {
 // typically used to make async requests.
 
 export const counterSlice = createSlice({
-	name: "counter",
+	name: "cart",
 	initialState,
 	// The `reducers` field lets us define reducers and generate associated actions
 	reducers: {
-		increment: (state) => {
+		ADD_TO_CART: (state) => {
 			// Redux Toolkit allows us to write "mutating" logic in reducers. It
 			// doesn't actually mutate the state because it uses the Immer library,
 			// which detects changes to a "draft state" and produces a brand new
 			// immutable state based off those changes
 			state.value += 1;
 		},
-		decrement: (state) => {
+		REMOVE_FROM_CART: (state) => {
 			state.value -= 1;
 		},
 		// Use the PayloadAction type to declare the contents of `action.payload`
-		incrementByAmount: (state, action) => {
+		CART_RESET: (state, action) => {
 			state.value += action.payload;
 		},
 	},
