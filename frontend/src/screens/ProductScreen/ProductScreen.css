@@ -50,7 +50,7 @@
 .right__info p > button {
 	grid-column: 1/-1;
 	padding: 10px 16px;
-	background: #171717;
+	background-color: #171717;
 	color: L #f4f4f4;
 	border: 1px solid #171717;
 	cursor: pointer;
